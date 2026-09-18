@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_assets/myfirststyles.css">
+    <title>Enquiries</title>
+</head>
+<body>
+    <header style="background-color: #6c4b4b; padding: 20px; text-align: left;">
+        <img src="_images/logo.png" alt="Bakery Logo" width="100">
+        <h1>Enquiries</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="enquiries-box">
+            <h2>Enquiry Application</h2>
+            <p>We offer a wide range of baked goods, including cakes, pastries, bread, and more. Our services include custom cake orders, catering for events, and baking classes.</p>
+            <p>For enquiries, please fill out the form below or contact us directly via email or phone. We look forward to serving you!</p>
+            <form action="submit_enquiry.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer style="background-color: #6c4b4b; padding: 20px; text-align: center;">
+        <p>&copy; 2026 Our Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
